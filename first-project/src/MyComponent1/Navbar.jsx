@@ -1,12 +1,18 @@
 import React from 'react'
+import "./Navbar.css"
 
 const Navbar = (props) => {
   return (
     <>
-
-        <h1>navbar here</h1>
-        <h1>  {props.name}</h1>
-        <h1>  {props.age}</h1>
+     <div className="nav">
+       <h1>logo</h1>
+     <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">Services</a></li>
+     </ul>
+     </div>
     </>
   )
 }

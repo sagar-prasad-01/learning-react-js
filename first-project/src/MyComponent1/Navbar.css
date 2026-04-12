@@ -1,0 +1,18 @@
+.nav{
+    background-color: rgb(255, 234, 127);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     font-size:19px;
+    font-weight: bold;
+
+}
+.nav ul{
+    font-size:19px;
+    font-weight: bold;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+    
+}

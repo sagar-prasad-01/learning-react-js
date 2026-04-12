@@ -1,0 +1,11 @@
+.homecard{
+background-color: aquamarine;
+height: 180px;
+width: 180px;
+border: 2px solid white;
+border-radius: 5px;
+display: flex;
+flex-direction: column;   
+align-items: center;
+justify-content: space-around;
+}
