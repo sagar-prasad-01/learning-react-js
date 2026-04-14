@@ -1,26 +1,37 @@
-import { Footer } from "./MyComponent1/Footer"
-import Home from "./MyComponent1/Home"
-import Navbar from "./MyComponent1/Navbar"
-import "./App.css"
-import About from "./MyComponent1/About"
- function App(){
+import Home from "./MyComponent1/Home";
+import Footer from "./MyComponent1/Footer";
+import Navbar from "./MyComponent1/Navbar";
+import Contact from "./MyComponent1/Contact";
+import "./App.css";
+import About from "./MyComponent1/About";
+import {BrowserRouter as Routers,Routes,Route } from "react-router-dom"
+function App() {
+  return (
+    <>
+  
+        <Routers>
+          <Navbar/>
+            <Routes>
+              <Route path="" element={<Home/>}></Route>
+              <Route path="about" element={<About/>}></Route>
+              <Route path="contact" element={<Contact/>}></Route>
+              
+     
+              
+             
+            </Routes>
+          <Footer/>
 
-  return(
-    <div>
-      <Navbar name="sagar" age="20"></Navbar>
-      <Home/>
-      <About/>
-      <Footer var1="hello" var2="bhopal"/>
+          
+        </Routers>
     
+    </>
+  );
+}
+export default App;
+//java script xml
 
-    </div>
-    
-  )
- }
- export default App
-//java script xml  
-
-//  single element return 
+//  single element return
 //{variable name}
 //className
 //?:
