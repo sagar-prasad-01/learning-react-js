@@ -1,21 +1,52 @@
-import React from 'react'
-import "./about.css"
+import React, { useState } from "react";
+import "./about.css";
 
 const About = () => {
+  const [FormData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...FormData,
+      [name]: value,
+    });
+  };
   return (
     <div className="about">
-      <h1 className="aknp">About</h1>
+      <h1>taking multiple input data handle with single useState</h1>
+      <h1>name:{FormData.name}</h1>
+      <input
+        type="text"
+        name="name"
+        placeholder="enter name"
+        onChange={handleChange}
+        value={FormData.name}
+      />
+      <h1>email:{FormData.email}</h1>
 
-      <p>
-        This is a simple React website. Here you can learn and explore basic features 
-        of React like components, routing, and UI building.
-      </p>
+      <input
+        type="text"
+        name="email"
+        placeholder="enter email"
+        value={FormData.email}
+        onChange={handleChange}
+      />
 
-      <p>
-        Our goal is to make learning easy and simple for beginners.
-      </p>
+      <h1>password:{FormData.password}</h1>
+
+      <input
+        type="text"
+        name="password"
+        placeholder="enter password"
+        value={FormData.password}
+        onChange={handleChange}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
