@@ -34,6 +34,7 @@ const About = () => {
         placeholder="enter email"
         value={FormData.email}
         onChange={handleChange}
+        
       />
 
       <h1>password:{FormData.password}</h1>
