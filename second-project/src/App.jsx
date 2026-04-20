@@ -1,5 +1,7 @@
 
 
+import ApiFetch from './Components/ApiFetch'
+import { Counter } from './Components/Counter'
 import Navbar from './Components/Navbar'
 
 function App() {
@@ -7,8 +9,8 @@ function App() {
 
   return (
     <>
-    <Navbar/>
-    <h1>hello</h1>
+    
+    <Counter/>
 
      </>
   )

@@ -1,12 +1,14 @@
 import React from 'react'
-
+import { useEffect,useState } from 'react'
 const ApiFetch = () => {
+  const [data,setData]=useState([]);
+
 
 
       useEffect(
             ()=>{
     
-          fetch("http://localhost:3000").then(
+          fetch("https://fakestoreapi.com/products").then(
             (data)=>(data.json()).then(
                 (i)=>(setData(i))
             )
@@ -16,13 +18,24 @@ const ApiFetch = () => {
             }
           )
     
-            },[data]
+            },[]
         )
     
         console.log(data)
   return (
-    <div>ApiFetch</div>
-  )
+  <div>
+    <h1>Products</h1>
+
+    {data.map((item) => (
+      <div key={item.id}>
+        <h3>{item.title}</h3>
+        <p>₹{item.price}</p>
+        <img src={item.image} width="100" />
+      </div>
+    ))}
+    
+  </div>
+)
 }
 
 export default ApiFetch

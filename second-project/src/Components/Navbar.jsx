@@ -27,21 +27,7 @@ export default function(){
        <h1>hello navbar</h1>
        <h1>counter={count}</h1>
        <button onClick={()=>{setCount(count+1)}}>click me</button>
- <h1>
-        {data.map(
-            (i)=>(
 
-                <>
-                <h1>{i.name}</h1>
-                <h1>{i.email}</h1>
-                <h1>{i.mobile}</h1>
-                </>
-
-
-            )
-
-        )}
-       </h1>
       
 
         </div>
