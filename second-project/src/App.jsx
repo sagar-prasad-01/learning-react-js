@@ -3,6 +3,7 @@
 import ApiFetch from './Components/ApiFetch'
 import { Counter } from './Components/Counter'
 import Navbar from './Components/Navbar'
+import { Todo } from './Components/Todo'
 
 function App() {
 
@@ -10,7 +11,8 @@ function App() {
   return (
     <>
     
-    <Counter/>
+    {/* <Counter/> */}
+    <Todo/>
 
      </>
   )
