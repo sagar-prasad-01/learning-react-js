@@ -2,6 +2,7 @@ import Home from "./MyComponent1/Home";
 import Footer from "./MyComponent1/Footer";
 import Navbar from "./MyComponent1/Navbar";
 import Contact from "./MyComponent1/Contact";
+import Login from "./MyComponent1/Login";
 import "./App.css";
 import About from "./MyComponent1/About";
 import {BrowserRouter as Routers,Routes,Route } from "react-router-dom"
@@ -15,6 +16,7 @@ function App() {
               <Route path="" element={<Home/>}></Route>
               <Route path="about" element={<About/>}></Route>
               <Route path="contact" element={<Contact/>}></Route>
+              <Route path="Login" element={<Contact/>}></Route>
               
      
               
